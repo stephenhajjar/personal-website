@@ -58,7 +58,7 @@ app.get('/blog/:id', (req, res) => {
     }
 })
 readCompiledMd().then(() => {
-    app.listen(3000, async () => {
+    app.listen(process.env.PORT || 3000, async () => {
         console.log('Started app on port 3000')
     })
 })
