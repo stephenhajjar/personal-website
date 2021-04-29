@@ -1,0 +1,12 @@
+<div id="blogs">
+    {{#each blogs}}
+    <div class="blog-preview">
+        <h1 class="preview-title">{{title}}</h1>
+        <div class="preview-box">
+            {{{content}}}
+            <a class="view-more" href="/blog/{{@index}}">View More</a>
+            <div class="gradient-fade"></div>
+        </div>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,24 @@
+<p>In this tutorial we will show you how to create a simple Express app. Setting one up is easy and you can build some pretty amazing applications with Express!</p>
+<h3 id="first-steps">First Steps</h3>
+<p>Create your folders directory, I tend to like them in my <code>home</code> folder:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">mkdir</span> example-express-app</a></code></pre></div>
+<p>You’ll then want to create an npm package in this repository. This will allow you to install all your dependencies.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">npm</span> init</a></code></pre></div>
+<p>Answer each question carefully</p>
+<h3 id="lets-get-started">Let’s get started</h3>
+<p>Once you’re done, do:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">npm</span> install express</a></code></pre></div>
+<p>We can then write our <code>server.js</code> file like so:</p>
+<pre><code>const express = require(&#39;express&#39;),
+      app     = express();
+
+const port = process.env.PORT || 3000;
+
+app.get(&#39;/&#39;, (req, res) =&gt; {
+    res.send(&#39;Hello World!&#39;);
+});
+
+app.listen(port, () =&gt; {
+    console.log(`listening on port ${port}`);
+});</code></pre>
+<p>That’s it! Happy coding!</p>

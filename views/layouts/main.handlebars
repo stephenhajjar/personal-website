@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Hajjar</title>
+    <link rel="stylesheet" href="/css/markdown.css">
+    <link rel="stylesheet" href="/css/fontawesome.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/images/headshot.jpg" class="headshot">
+        <h1 class="title">Stephen Hajjar</h1>
+        <p class="subtitle">Software developer interested in finance, data science & machine learning</p>
+        <div class="socials">
+            <a href="https://github.com/stephenhajjar"><span class="fab fa-github"></span></a>
+        </div>
+        <div class="link-row">
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+        </div>
+    </div>
+    <div class="content">
+        {{{body}}}
+    </div>
+
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+        .headshot {
+            width: 50%;
+            height: 50%;
+            border-radius: 5px;
+            object-fit: contain;
+        }
+
+        .title {
+            margin-top: 24px;
+            font-size: 48px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .socials a {
+            margin: 0 12px;
+            font-size: 36px;
+            color: black;
+        }
+    </style>
+</body>
+</html>
